@@ -1,6 +1,6 @@
 # Configure the AzureRM provider (using v2.1)
 provider "azurerm" {
-    version         = "~>2.1.0"
+    version         = "~>2.14.0"
     features {}
 }
 
