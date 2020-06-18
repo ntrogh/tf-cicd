@@ -1,3 +1,4 @@
+# Configure remote state on Azure Storage
 terraform {
     backend "azurerm" {
         resource_group_name   = "tfcicd-tfstate"
