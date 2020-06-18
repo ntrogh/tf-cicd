@@ -1,3 +1,12 @@
+terraform {
+    backend "azurerm" {
+        resource_group_name   = "tfcicd-tfstate"
+        storage_account_name  = "tfstate18062020"
+        container_name        = "tstate"
+        key                   = "terraform.tfstate"
+    }
+}
+
 # Configure the AzureRM provider (using v2.1)
 provider "azurerm" {
     version         = "~>2.14.0"
